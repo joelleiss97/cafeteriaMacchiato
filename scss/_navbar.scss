@@ -1,0 +1,51 @@
+/*.... sub-menu....*/
+#menuPrincipal{
+    font-size: 2rem;
+    font-weight: normal;
+    list-style-type: 'Nunito', sans-serif;
+    padding: 4rem;
+    text-align: right;
+    padding-bottom: 3rem;
+    font-family: 'Lora', serif;
+    list-style: none;
+}
+#menuPrincipal li{
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+#menuPrincipal ul{
+    position: absolute;
+    display: none;
+}
+#menuPrincipal ul li{
+    display: block;
+    width: 3rem;
+    background-color: rgb(178, 228, 236);
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+}
+
+#menuPrincipal li:hover ul{
+    display: block;
+}
+#menuPrincipal a:hover{
+    color: black;
+    font-size: 2.5rem;
+
+}
+
+a{
+    text-decoration: none;
+}
+#menuPrincipal{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    padding-bottom: 15rem;
+    margin-bottom: 3rem;
+
+}

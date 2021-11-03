@@ -1,0 +1,82 @@
+
+
+
+/*....---aplicando grids---...*/
+.nuestrosProductos{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 1fr;
+
+}
+.nuestroHome{
+    display: grid;
+    /*grid-template-columns: 3fr 5fr;
+    grid-template-rows: 2fr;*/
+    grid-area: nuestroHome;
+}
+.gridBody{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "nuestroHome contenido ."
+    "imagenes imagenes imagenes"
+    "footer footer footer"
+    ;
+    /*justify-content: center;
+    align-content: center;*/
+}
+nav{
+    grid-area: nav;
+}
+
+/*----grid mobile firts----*/
+
+@media only screen and(max-width:768px){
+
+    .mobilePdre{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main{
+        background-color: rgb(127, 255, 138);
+        font-size: 3rem;
+    }
+}
+
+@media only screen and(max-width:440px){
+
+    .mobilePadre{
+        grid-template-columns: 1fr;
+    }
+    header{
+        background-color: blue;
+    }
+
+}
+/*----aplicando grid a la galeria----*/
+/*
+.galeriaContenido{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-auto-rows: 150px;
+   padding: 20px;
+   grid-gap: 10px;
+   
+}
+.galeriaImagen{
+    object-fit: coven;
+    
+   
+}
+.galeriaItem :nth-child(4){
+    grid-column-start: span 2 ;
+}
+*/
+.destacados{
+    font-size: 40px;
+    text-align: center;
+    color: solid black;
+    font-family:'Nunito', sans-serif ;
+}

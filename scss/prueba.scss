@@ -1,0 +1,377 @@
+@import "footer";
+@import "contacto";
+@import "navbar";
+@import "variables";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+}
+body{
+    background-image: url(../multimedia/fondogris.png);
+}
+
+h1{
+    color: black;
+    font-size: 5rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400 italic;
+    text-align: center;
+    padding-top: 3rem;
+
+}
+
+h2{
+    color: rgb(61, 91, 226);
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+h2:hover{
+    transform: scale(1,2);
+    transition: 1s;
+ 
+  }
+ .contenidoParrafo{
+     color: brown;
+     font-size: 2rem;
+     text-align: center;
+     padding: 3rem 2rem 3rem 2rem;
+     font-family: 'Nunito', sans-serif;
+     font-weight: 700;
+     grid-area: contenido;
+ }
+ .contenidoParrafoUno{
+     color: brown;
+     font-size: 2rem;
+     text-align: center;
+     padding: 3rem 2rem 3rem 2rem;
+     font-family: 'Nunito', sans-serif;
+     font-weight: 700;
+ }
+ 
+ /*....seccion servicios...*/
+ 
+ h3{
+     color: brown;
+     font-size: 2rem;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+ }
+ /*.... tablas ...*/
+ tr th{
+     color: rgba(26, 109, 177, 0.842);
+     font-size: 3rem;
+     
+ }
+ tr td{
+     color: rgb(170, 29, 29);
+     font-size: 2rem;
+ 
+ }
+ 
+ h4{
+     color: brown;
+     font-size: 2rem;
+     padding-bottom: 2rem;
+     padding-top: 2rem;
+ }
+ /*
+ header{
+    background-color: rgb(48, 187, 175);
+    padding: 5rem 15rem 5rem 15rem;
+    grid-area: header;
+    
+   
+} */
+ /*
+footer {
+    color: black;
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+    background-color: #30bbaf;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: footer;
+ }
+  */
+  .pie-pagina{
+      width: 100%;
+      background-color: #0a0c0c;
+  }
+  .pie-pagina .grupo-1{
+      width: 100%;
+      max-width: 1200%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 50px;
+      padding: 45px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .pie-pagina .grupo-1 .box h2{
+      color: aliceblue;
+      margin-bottom: 25px;
+      font-size: 20px;
+  }
+  .pie-pagina .grupo-1 .box p{
+      color: #efefef;
+      margin-bottom: 10px;
+      font-size: 15px;
+      padding: 15px;
+  }
+  
+  .pie-pagina .grupo-1 .redSocial a{
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: aliceblue;
+      margin-right: 10px;
+      background-color: #0d2033;
+      text-align: center;
+      transition: all 300ms ease;
+      margin-right: 40px;
+  }
+  .pie-pagina .grupo-1 .redSocial a:hover{
+      color: aqua;
+  }
+  @media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+      
+  }
+/*
+  .pie-pagina .grupo-2{
+      background-color: #0a1a2a;
+      padding: 15px 10px;
+      text-align: center;
+      color: #fff;
+      margin-top: auto;
+  }
+ */
+ /*....imagenes multimedia*/
+ .imagenesMultimedia{
+     border-color: black;
+     border-style: solid;
+     padding: 1rem;
+     margin: 1rem;
+     grid-area: imagenes;
+     border-radius: 50px;
+    }
+ .imagenesMultimedia:hover{
+     transform: translate( 20px, 20px);
+     transition: 2s;
+    }
+ 
+ .formularioMaps{
+     display: flex;
+     justify-content: center;
+     padding: 4rem;
+   }
+ .mapsFormulario{
+     border-color: black;
+     border-style: solid;
+     border-radius: 50px;
+   }
+
+/*.......card boot......*/
+.card-border{
+    border: solid 1px black;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 10px;
+    transition: all ease-out 0.2s;
+    box-shadow: 0px 1px 10px black;
+}
+.card-border :hover{
+    transform: scale(1.05);
+    
+
+}
+.card-body{
+    .card-title{
+        font-size: 2rem;
+        color: black;
+        font-family: 'Nunito', sans-serif;
+    }
+    .card-text{
+        font-size: 1rem;
+        color: black;
+        font-family: 'Nunito', sans-serif;
+    }
+}
+.card-img{
+    width: 100%;
+    height: 210px;
+
+}
+h5{
+    font-size: 3rem;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+h1{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.productos{
+    .productos__titulo{
+        font-size: 3rem;
+        color: black;
+        font-family: 'Nunito', sans-serif;
+    }
+    .productos__lista{
+        font-size: 2rem;
+        color: rgb(27, 27, 173);
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        padding: 2rem;
+    } 
+}
+.servicio{
+    .servicio__titulo{
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Nunito', sans-serif;
+    }
+    .servicio__productos{
+        color:#c96328;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        font-family:'Nunito', sans-serif;
+        font-weight: bold;
+    }
+}
+.galeriaImagen{
+    align-content: center center;
+    border-radius: 50px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    border-color: black;
+    border-style: solid;
+}
+.galeriaContenido{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+}
+.letrasFormulario{
+    color:  #0a0c0c ;
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+.buttonInformacion{
+    font-size: 5rem;
+    font-family:  'Nunito', sans-serif;
+}
+
+/*-----------------------bootraps-------------*/
+.carousel-item{
+    height: 700px;
+    padding: 5rem;
+}
+.modal-header{
+    background-color: rgb(48, 187, 175); 
+    font-size: 2rem;
+    font-family:'Nunito', sans-serif;
+    
+}
+.modal-title{
+    font-family: $tipografiaPrincipal;
+    font-size: 3rem;
+}
+.modal-body{
+    font-size: 2rem;
+    font-family: $tipografiaPrincipal ;
+
+}
+/*---------------aplicando operaciones de sass----------------*/
+header{
+    @if $colorPrincipal == principal{
+        background-color:rgb(48, 187, 175);
+    }
+    @else if $colorPrincipal== secundario{
+        background-color: rgb(7, 0, 0);
+    }
+}
+header h1{
+    @if $tipografiaPrincipal==principal {
+        color: black;
+        font-family: 'Nunito', sans-serif;
+    }
+    @else if $tipografiaPrincipal==secundaria{
+        color: white;
+        font-family: 'Lora', serif;
+    }
+} 
+
+ .MacchiatoTitulo{
+     font-size: 30px;
+     color: solid black;
+ }
+ .colorNavbar{
+     background-color: rgb(48, 187, 175);
+    
+ }
+ .navbar{
+     text-align: center;
+     font-size: 1rem;
+     font-family:'Nunito', sans-serif;
+     padding-left: 100px;
+    
+     .nav-item{
+        padding: 3rem;
+        justify-content: space-evenly;
+    }
+     
+ }
+ .destacados{
+     font-size: 30px;
+     text-align: center;
+     font-family:'Nunito', sans-serif;
+     color: solid black;
+ }
+.bienvenidoTitulo{
+    font-size: 80px;
+    color: black;
+    font-family:'Nunito', sans-serif;
+}
+.formularioMaps p{
+    font-size: 20px;
+    color: solid black;
+    font-family: 'Nunito', sans-serif;
+    transition: all 300ms ease;
+    gap: 5px;
+}
+.formularioMaps p a:hover{
+    color: aqua;
+    font-size: 25px;
+}
