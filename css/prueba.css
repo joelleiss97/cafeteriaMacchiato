@@ -166,50 +166,58 @@ footer {
   */
 .pie-pagina {
   width: 100%;
-  background-color: #0a0c0c; }
+  background-color: #20ddc4; }
 
-.pie-pagina .grupo-1 {
+  .pie-pagina ul p{
+    font-size: 25px;
+    color: #0a0c0c;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+  }
+  .pie-pagina ul li{
+    font-size: 20px;
+    color: #0a0c0c;
+    font-family: 'Nunito', sans-serif;
+    transition: all 300ms ease;
+  }
+  .pie-pagina ul li a:hover{
+    font-size: 3rem;
+    transform: scale(1 ,2);
+  }
+.pie-pagina{
   width: 100%;
   max-width: 1200%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
-  padding: 45px 0px; }
+  padding: 30px 0px; }
 
-.pie-pagina .grupo-1 .box figure {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.tituloSocial{
+  font-size: 30px;
+  color: solid black;
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
 
-.pie-pagina .grupo-1 .box h2 {
-  color: aliceblue;
-  margin-bottom: 25px;
-  font-size: 20px; }
-
-.pie-pagina .grupo-1 .box p {
-  color: #efefef;
-  margin-bottom: 10px;
-  font-size: 15px;
-  padding: 15px; }
-
-.pie-pagina .grupo-1 .redSocial a {
+ .redSocial a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: aliceblue;
+  color: rgb(9, 11, 14);
   margin-right: 10px;
-  background-color: #0d2033;
   text-align: center;
   transition: all 300ms ease;
-  margin-right: 40px; }
+  margin-right: 40px; 
+  padding-left: 20px;
+}
+  
 
-.pie-pagina .grupo-1 .redSocial a:hover {
-  color: aqua; }
+.pie-pagina .redSocial a:hover {
+  color: rgb(242, 248, 248); }
 
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
